@@ -33,7 +33,6 @@ def preprocessing():
     id2word = {}
     
     currentWordId = 0
-    number = 1
     for document in documents:
         word2Count = {}
         # segmentation
@@ -191,7 +190,7 @@ for iteration in range(0, iterEM):
     nz = np.zeros([K])
     nzw = np.zeros([K, M])
     alphaSS = 0
-    # EStep
+    # E-Step
     for d in range(0, N):
         variationalInference(docs, d, gamma, phi)
         gammaSum = 0
@@ -205,7 +204,7 @@ for iteration in range(0, iterEM):
                 nzw[z][docs[d].itemIdList[w]] += docs[d].itemCountList[w] * phi[w, z]
                 nz[z] += docs[d].itemCountList[w] * phi[w, z]
 
-    # MStep
+    # M-Step
     updateVarphi()
 
 # calculate the top 10 terms of each topic
