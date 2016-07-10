@@ -15,3 +15,4 @@ Author
  * ZhikaiZhang 
  * Email <zhangzhikai@seu.edu.cn>
  * Blog <http://zhikaizhang.cn>
+ * [自然语言处理之LDA II-Variational EM实现](http://zhikaizhang.cn/2016/07/10/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E4%B9%8BLDA%20II-Variational%20EM%E5%AE%9E%E7%8E%B0/)
